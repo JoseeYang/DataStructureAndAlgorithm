@@ -1,23 +1,24 @@
 package com.bilibili.linkedlist;
 
-//链表的节点类
+//双链表的节点类
 //英雄节点类
-public class HeroNode {
+public class DoubleHeroNode {
     //    每个英雄有编号，姓名和绰号
     private int no;
     private String name;
     private String nickName;
-    //    指向下一个节点的next指针
-    private HeroNode next;
+    //    指向下一个节点的next指针，指向上一个节点的pre指针
+    private DoubleHeroNode next;
+    private DoubleHeroNode pre;
     
-    //    get与sat方法
-    public HeroNode getNext() {
-        return next;
+//    构造器
+    public DoubleHeroNode(int no, String name, String nickName) {
+        this.no = no;
+        this.name = name;
+        this.nickName = nickName;
     }
     
-    public void setNext(HeroNode next) {
-        this.next = next;
-    }
+//    get与set方法
     
     public int getNo() {
         return no;
@@ -43,20 +44,29 @@ public class HeroNode {
         this.nickName = nickName;
     }
     
-    //    构造器
-    public HeroNode(int no, String name, String nickName) {
-        this.no = no;
-        this.name = name;
-        this.nickName = nickName;
+    public DoubleHeroNode getNext() {
+        return next;
+    }
+    
+    public void setNext(DoubleHeroNode next) {
+        this.next = next;
+    }
+    
+    public DoubleHeroNode getPre() {
+        return pre;
+    }
+    
+    public void setPre(DoubleHeroNode pre) {
+        this.pre = pre;
     }
     
     //    为了方便显示，重写toString方法
     @Override
     public String toString() {
-        return "HeroNode{" +
+        return "DoubleHeroNode{" +
                 "no=" + no +
                 ", name='" + name + '\'' +
-                ", niceName='" + nickName + '\'' +
+                ", nickName='" + nickName + '\'' +
                 '}';
     }
 }

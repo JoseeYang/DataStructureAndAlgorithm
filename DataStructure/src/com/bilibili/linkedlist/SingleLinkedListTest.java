@@ -5,19 +5,19 @@ public class SingleLinkedListTest {
     public static void main(String[] args) {
 
 //        创建节点
-        HeroNode heroNode1 = new HeroNode(1, "宋江", "及时雨");
-        HeroNode heroNode2 = new HeroNode(2, "卢俊义", "玉麒麟");
-        HeroNode heroNode3 = new HeroNode(3, "吴用", "智多星");
-        HeroNode heroNode4 = new HeroNode(4, "林冲", "豹子头");
+        SingleHeroNode singleHeroNode1 = new SingleHeroNode(1, "宋江", "及时雨");
+        SingleHeroNode singleHeroNode2 = new SingleHeroNode(2, "卢俊义", "玉麒麟");
+        SingleHeroNode singleHeroNode3 = new SingleHeroNode(3, "吴用", "智多星");
+        SingleHeroNode singleHeroNode4 = new SingleHeroNode(4, "林冲", "豹子头");
 
 //        创建列表
         SingleLinkedList singleLinkedList = new SingleLinkedList();
 
 //        加入节点
-        singleLinkedList.add(heroNode1);
-        singleLinkedList.add(heroNode2);
-        singleLinkedList.add(heroNode3);
-        singleLinkedList.add(heroNode4);
+        singleLinkedList.add(singleHeroNode1);
+        singleLinkedList.add(singleHeroNode2);
+        singleLinkedList.add(singleHeroNode3);
+        singleLinkedList.add(singleHeroNode4);
 
 ////        按顺序加入节点
 //        singleLinkedList.addByOrder(heroNode1);
@@ -91,9 +91,9 @@ public class SingleLinkedListTest {
         SingleLinkedList newList = new SingleLinkedList();
 
 //        next存temp指向的下一个对象
-        HeroNode next;
+        SingleHeroNode next;
 //        中间变量temp
-        HeroNode temp = list1.getHead().getNext();
+        SingleHeroNode temp = list1.getHead().getNext();
         while (temp != null) {
 //            判断是否到链表最后
 //            将temp的下一个指向对象存入next
