@@ -50,7 +50,7 @@ public class DoubleLinkedList {
 //        遍历链表，找到最后
         while (temp.getNext() != null) {
 //            找到最后
-            //            如果没有找到，就让temp后移
+//            如果没有找到，就让temp后移
             temp = temp.getNext();
         }
 //        当退出while循环的时候，temp就指向了链表的最后一个节点

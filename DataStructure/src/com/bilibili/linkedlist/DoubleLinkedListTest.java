@@ -12,19 +12,19 @@ public class DoubleLinkedListTest {
 //        创建列表
         DoubleLinkedList doubleLinkedList = new DoubleLinkedList();
 
-////        加入节点
-//        doubleLinkedList.add(heroNode1);
-//        doubleLinkedList.add(heroNode2);
-//        doubleLinkedList.add(heroNode3);
-//        doubleLinkedList.add(heroNode4);
+//        加入节点
+        doubleLinkedList.add(heroNode1);
+        doubleLinkedList.add(heroNode2);
+        doubleLinkedList.add(heroNode3);
+        doubleLinkedList.add(heroNode4);
 
 
-//        按顺序加入节点
-        doubleLinkedList.addByOrder(heroNode1);
-        doubleLinkedList.addByOrder(heroNode4);
-        doubleLinkedList.addByOrder(heroNode2);
-        doubleLinkedList.addByOrder(heroNode3);
-        doubleLinkedList.addByOrder(heroNode4);
+////        按顺序加入节点
+//        doubleLinkedList.addByOrder(heroNode1);
+//        doubleLinkedList.addByOrder(heroNode4);
+//        doubleLinkedList.addByOrder(heroNode2);
+//        doubleLinkedList.addByOrder(heroNode3);
+//        doubleLinkedList.addByOrder(heroNode4);
 
 
 ////        修改节点
